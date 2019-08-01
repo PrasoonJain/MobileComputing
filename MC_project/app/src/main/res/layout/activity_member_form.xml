@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    tools:context="com.example.kapur.saurabh.mc_project.MemberForm">
+
+    <ImageView
+        android:id="@+id/ApplicationLogo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/logoapp" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inp_member_email"
+        android:layout_below="@id/name_warning_message"
+        android:layout_marginTop="10dp">
+    <EditText
+        android:id="@+id/member_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_warning_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:hint="Enter Email"
+        android:textColorHint="@color/white"
+        android:imeOptions="actionDone"
+        android:inputType="textShortMessage" />
+</android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inp_member_name"
+        android:layout_below="@id/member_heading"
+        android:layout_marginTop="10dp">
+    <EditText
+        android:id="@+id/member_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:hint="Enter Name"
+        android:textColorHint="@color/white"
+        android:imeOptions="actionDone"
+        android:inputType="textShortMessage" />
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:id="@+id/member_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ApplicationLogo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="New Member"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/droidserifbold"/>
+
+
+    <TextView
+        android:id="@+id/name_warning_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_member_name"
+        android:layout_alignRight="@+id/inp_member_name"
+        android:layout_below="@id/inp_member_name"
+        android:gravity="center"
+        android:text="This field is required!!"
+        android:textColor="@color/buttonpressed"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/email_warning_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inp_member_email"
+        android:layout_alignRight="@+id/inp_member_email"
+        android:layout_below="@id/inp_member_email"
+        android:gravity="center"
+        android:text="This field is required!!"
+        android:textColor="@color/buttonpressed"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/email_iiitd_warning_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email_warning_message"
+        android:layout_alignRight="@+id/email_warning_message"
+        android:layout_below="@id/email_warning_message"
+        android:gravity="center"
+        android:text="Please enter IIITD email id"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_iiitd_warning_message"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/create_button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_color"
+            android:text="Add Member"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="493dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

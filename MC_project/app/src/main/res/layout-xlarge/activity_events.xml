@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context=".CreateEvent">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        shimmer:duration="1000">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            contentPadding="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="2dp">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:id="@+id/event_img"
+                    android:layout_width="296dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/robo">
+
+                </ImageView>
+
+                <TextView
+
+                    android:id="@+id/event_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/event_img"
+                    android:text="Prosort"
+                    android:textSize="30dp"
+                    style="@style/BoldMonoSerif">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/event_Venue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/event_title"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/event_img"
+                    android:text="C21"
+                    android:textSize="20dp"
+                    style="@style/BoldMonoSerif">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/event_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/event_Venue"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/event_img"
+                    android:text="Today"
+                    android:textSize="20dp"
+                    style="@style/BoldMonoSerif">
+
+                </TextView>
+
+                <com.like.LikeButton
+                    android:id="@+id/like_btn"
+                    android:layout_width="73dp"
+                    android:layout_height="57dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="23dp"
+                    app:anim_scale_factor="2"
+                    app:circle_end_color="@color/colorAccent"
+                    app:circle_start_color="@color/colorPrimary"
+                    app:dots_primary_color="@color/colorAccent"
+                    app:dots_secondary_color="@color/colorPrimary"
+                    app:icon_size="20dp"
+                    app:icon_type="heart"
+                    app:is_enabled="true"
+                    app:like_drawable="@drawable/heart_on"
+                    app:liked="false"
+                    app:unlike_drawable="@drawable/heart_off" />
+
+                <ImageView
+                    android:id="@+id/calendar_btn"
+                    android:layout_width="75dp"
+                    android:layout_height="59dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toStartOf="@+id/like_btn"
+                    android:src="@drawable/calendar_icon" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kapur.saurabh.mc_project.CreateEvent"
+
+    android:background="@drawable/gradient">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:src="@drawable/logoapp" />
+
+            <RelativeLayout
+                android:id="@+id/layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_marginTop="30dp"
+
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/textname"
+                    style="@style/BoldMonoSerif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_marginStart="106dp"
+                    android:text="Name:"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/event_name"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="101dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_name"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/textdate"
+                    style="@style/BoldMonoSerif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="109dp"
+                    android:text="Date:"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/event_date"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="114dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_date"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/textstart"
+                    style="@style/BoldMonoSerif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="98dp"
+                    android:text="Start Time:"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/event_time"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="110dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_start_time"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/textend"
+                    style="@style/BoldMonoSerif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="103dp"
+                    android:text="End Time:"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/end_time_edit"
+                    android:layout_width="152dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="113dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_end_time"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/textvenue"
+                    style="@style/BoldMonoSerif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="110dp"
+                    android:text="Venue:"
+                    android:textSize="40sp" />
+
+                <EditText
+                    android:id="@+id/event_venue"
+                    android:layout_width="153dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="113dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_venue"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/textdescription"
+                    style="@style/BoldMonoSerif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="90dp"
+                    android:text="Description:"
+                    android:textSize="40sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textdescription">
+
+                    <EditText
+                        android:id="@+id/event_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="10dp"
+                        android:scrollbarAlwaysDrawVerticalTrack="true" />
+                </ScrollView>
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/add_event_image"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/create_button"
+               android:layout_marginLeft="20dp"
+                android:background="@drawable/roundcorner"
+                android:text="Change Image"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/create_button"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/layout_description"
+
+                android:background="@drawable/roundcorner"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@id/delete_button"
+                android:paddingRight="10dp"
+                android:text="Save "
+                android:textColor="#FFF"
+                android:layout_marginLeft="30dp"/>
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/add_event_image"
+                android:layout_marginStart="261dp"
+                android:background="@drawable/roundcorner"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Delete "
+                android:textColor="#FFF" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

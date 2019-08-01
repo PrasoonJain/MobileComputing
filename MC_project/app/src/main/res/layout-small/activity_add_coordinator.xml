@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCoordinator"
+    android:background="@drawable/gradient"
+    >
+
+
+    <ImageView
+        android:id="@+id/ApplicationLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logoapp" />
+
+    <EditText
+        android:id="@+id/coor_email"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="204dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/club_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/coor_email"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/Create_coordinator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundcorner"
+        android:text="Create"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/BoldMonoSerif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/coor_email"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:paddingLeft="10dp"
+        android:text="Email"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/BoldMonoSerif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="247dp"
+        android:text="Club Name"
+        android:textSize="20dp"/>
+</RelativeLayout>

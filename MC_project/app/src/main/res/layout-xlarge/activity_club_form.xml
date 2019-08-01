@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="ClubForm">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                        <ImageView
+                            android:id="@+id/ApplicationLogo"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp"
+                            app:srcCompat="@drawable/logoapp" />
+
+                        <EditText
+                            android:id="@+id/club_name_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/club_heading"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="13dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:gravity="center"
+                            android:hint="Enter Name"
+                            android:imeOptions="actionDone"
+                            android:inputType="textShortMessage" />
+
+                        <ScrollView
+                            android:id="@+id/des_scroll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/empty_warning_message">
+                                <EditText
+                                    android:id="@+id/club_about_edit_text"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_height="10dp"
+                                    android:layout_centerInParent="true"
+                                    android:gravity="top|left"
+                                    android:hint="Describe your club here..."
+                                    android:imeOptions="actionDone"
+                                    android:inputType="textMultiLine"
+                                    android:lines="5"
+                                    android:maxLines="10"
+                                    android:scrollbars="vertical" />
+                        </ScrollView>
+                        <TextView
+                            android:id="@+id/club_heading"
+                            style="@style/BoldMonoSerif"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ApplicationLogo"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:text="New Club"
+                            android:textSize="40dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/empty_warning_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/club_name_edit_text"
+                            android:layout_alignRight="@+id/club_name_edit_text"
+                            android:layout_below="@id/club_name_edit_text"
+                            android:gravity="center"
+                            android:text="This field is required!!"
+                            android:textColor="@color/red"
+                            android:textSize="20dp"
+                            android:visibility="invisible" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cat_spinner"
+                            android:layout_marginTop="20dp">
+
+                                <Button
+                                    android:id="@+id/club_create_button"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="113dp"
+                                    android:layout_height="50dp"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginLeft="220dp"
+                                    android:background="@drawable/roundcorner"
+                                    android:text="Create"
+                                    android:textSize="15dp"
+                                    tools:layout_editor_absoluteX="39dp"
+                                    tools:layout_editor_absoluteY="493dp" />
+
+                                <Button
+                                    android:id="@+id/club_image_add_button"
+                                    style="@style/Widget.AppCompat.Button.Colored"
+                                    android:layout_width="113dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="100dp"
+                                    android:layout_marginRight="30dp"
+                                    android:background="@drawable/roundcorner"
+                                    android:text="AddImage"
+                                    android:textSize="15dp" />
+
+                        </LinearLayout>
+
+                        <Spinner
+                            android:id="@+id/cat_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/des_scroll"
+                            />
+                </RelativeLayout>
+        </ScrollView>
+
+</RelativeLayout>

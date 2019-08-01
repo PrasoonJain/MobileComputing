@@ -1,0 +1,191 @@
+<resources>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.ActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/silverp_p</item>
+        <item name="colorPrimaryDark">@color/black_p</item>
+        <item name="colorAccent">@color/silver_p</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/silverp_p</item>
+        <item name="colorPrimaryDark">@color/black_p</item>
+        <item name="colorAccent">@color/silver_p</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppTheme.CustomTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="ThemeOverlay.FirebaseIcon" parent="AppTheme">
+        <item name="android:layout_marginTop">@dimen/icon_top_margin</item>
+        <item name="android:layout_marginBottom">@dimen/icon_bottom_margin</item>
+    </style>
+
+    <style name="Regular">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">sans-serif</item>
+    </style>
+
+    <style name="Italic">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">sans-serif</item>
+    </style>
+
+
+    <style name="Bold">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">sans-serif</item>
+    </style>
+
+    <style name="BoldItalic">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">sans-serif</item>
+    </style>
+
+    <style name="RegularCondensed">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">sans-serif-condensed</item>
+    </style>
+
+    <style name="ItalicCondensed">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">sans-serif-condensed</item>
+    </style>
+
+
+    <style name="BoldCondensed">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">sans-serif-condensed</item>
+    </style>
+
+    <style name="Casual">
+        <item name="android:fontFamily">casual</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">Casual</item>
+    </style>
+
+    <style name="Cursive">
+        <item name="android:fontFamily">cursive</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">Cursive</item>
+    </style>
+
+    <style name="RegularMono">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">mono space</item>
+    </style>
+
+    <style name="ItalicMono">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">monospace</item>
+    </style>
+
+    <style name="BoldMono">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">monospace</item>
+    </style>
+
+    <style name="RegularMonoSerif">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">serif-monospace</item>
+    </style>
+
+    <style name="ItalicMonoSerif">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">serif-monospace</item>
+    </style>
+
+    <style name="BoldMonoSerif">
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:text">serif-monospace</item>
+    </style>
+
+
+    <style name="dark" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Form">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <!-- Activity with no Title -->
+    <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Dark Buttons -->
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Light EditTexts -->
+    <style name="ThemeOverlay.MyLightEditText" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="ThemeOverlay.MyTextDetail" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="ThemeOverlay.MyTitleText" parent="AppTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="ThemeOverlay"></style>
+
+    <style name="Theme"></style>
+
+</resources>

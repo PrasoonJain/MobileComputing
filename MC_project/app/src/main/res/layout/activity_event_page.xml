@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+<ScrollView
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".EventPage">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/event_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/tasveer" />
+
+
+        <TextView
+            android:id="@+id/event_club"
+            android:fontFamily="@font/droidserifbold"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/event_image"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="50dp"
+            android:textColor="@color/black_p"
+            android:layout_marginTop="20dp"
+            android:text="Tasveer"
+            android:textSize="30sp" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Edit"
+            android:layout_toRightOf="@+id/event_club"
+            android:layout_below="@id/event_image"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/eventEdit"
+            android:background="@drawable/button_color"
+            android:textColor="#fff"
+
+            />
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_club"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="FooQs"
+
+            android:fontFamily="@font/droidserifbold"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/event_venue"
+            android:fontFamily="@font/droidserifregular"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:layout_below="@id/event_name"
+            android:layout_marginTop="10dp"
+            android:text="C12"
+            android:textColor="@color/black_p"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/event_date"
+            style="@style/RegularMono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/event_name"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:paddingRight="20dp"
+            android:text="24/7/18"
+            android:textSize="20sp"
+            android:textColor="@color/black_p"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/details"
+            android:text="Details"
+            android:fontFamily="@font/droidserifregular"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black_p"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/event_venue"/>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details">
+
+        <TextView
+            android:id="@+id/event_description"
+            style="@style/BoldItalic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_venue"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Event Details : HI the first event of this semester . Welcome "
+            android:textSize="15sp" />
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+
+            android:layout_below="@+id/event_date"
+            >
+        <TextView
+            android:id="@+id/event_starttime"
+            style="@style/RegularMono"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black_p"
+
+
+            android:text="6:00"
+            android:textSize="20sp" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:layout_toRightOf="@+id/event_starttime"
+            >
+        <TextView
+            android:id="@+id/event_dash"
+            style="@style/RegularMono"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+
+            android:text="-"
+            android:textColor="@color/black_p"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/event_endtime"
+            style="@style/RegularMono"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/event_dash"
+            android:textColor="@color/black_p"
+
+
+            android:text="8:30"
+            android:textSize="20sp" />
+    </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

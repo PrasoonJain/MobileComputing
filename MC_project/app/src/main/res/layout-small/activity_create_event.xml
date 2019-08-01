@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kapur.saurabh.mc_project.CreateEvent"
+
+    android:background="@drawable/gradient">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logoapp"
+            android:id="@+id/logo"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:id="@+id/layout_name"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textSize="20sp"
+                android:id="@+id/textname"
+                style="@style/BoldMonoSerif"
+
+                />
+
+            <EditText
+                android:id="@+id/event_name"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="111dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/textname"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_name"
+            android:id="@+id/layout_date"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date:"
+                android:textSize="20sp"
+                android:id="@+id/textdate"
+                style="@style/BoldMonoSerif"
+                />
+
+            <EditText
+                android:id="@+id/event_date"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="112dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:layout_toRightOf="@+id/textdate" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_date"
+            android:id="@+id/layout_start_time"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Time:"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@id/event_time"
+                android:id="@+id/textstart"
+                style="@style/BoldMonoSerif"
+                />
+
+            <EditText
+                android:id="@+id/event_time"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:layout_toRightOf="@+id/textstart"
+
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_start_time"
+            android:id="@+id/layout_end_time"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Time:"
+                android:textSize="20sp"
+                style="@style/BoldMonoSerif"
+                android:id="@+id/textend"
+                />
+
+            <EditText
+                android:id="@+id/end_time_edit"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="61dp"
+                android:layout_marginRight="10dp"
+                android:focusableInTouchMode="false"
+                android:layout_toRightOf="@id/textend" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_end_time"
+            android:id="@+id/layout_venue"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venue:"
+                android:textSize="20sp"
+                style="@style/BoldMonoSerif"
+                android:id="@+id/textvenue"
+                />
+
+            <EditText
+                android:id="@+id/event_venue"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="101dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/textvenue" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_venue"
+            android:id="@+id/layout_description"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:textSize="20sp"
+                style="@style/BoldMonoSerif"
+                android:id="@+id/textdescription"
+                />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/textdescription"
+                android:layout_height="wrap_content">
+                <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/event_description"
+                    android:layout_marginRight="10dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:layout_marginLeft="21dp"
+            />
+            </ScrollView>
+
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_description"
+            android:background="@drawable/roundcorner"
+            android:text="Add Image"
+            android:textColor="#FFF"
+            android:id="@+id/add_event_image"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/create_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="75dp"
+            android:background="@drawable/roundcorner"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Create"
+            android:textColor="#FFF" />
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

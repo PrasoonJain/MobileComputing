@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_interests"
+        android:icon="@drawable/interests"
+        android:title="@string/title_interests" />
+
+    <item
+        android:id="@+id/navigation_clubs"
+        android:icon="@drawable/club"
+        android:title="@string/title_clubs" />
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile"
+        android:title="You" />
+
+</menu>

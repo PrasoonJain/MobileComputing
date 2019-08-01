@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.kapur.saurabh.mc_project.SportsFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/club_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_bar_app"
+        android:layout_centerInParent="true">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:id="@+id/button_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_bar_app">
+
+
+    </FrameLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/nav_bar_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <FrameLayout
+            android:id="@+id/bott_nav_bar_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/fragment_add_bottom_nav_bar"></include>
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+</RelativeLayout>

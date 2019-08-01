@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    tools:context=".AddCoordinator">
+
+
+    <ImageView
+        android:id="@+id/ApplicationLogo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logoapp" />
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/inp_coor_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ApplicationLogo"
+        android:layout_marginTop="10dp">
+    <EditText
+        android:id="@+id/coor_email"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Coordinator Email"
+        android:layout_marginTop="204dp"
+        android:ems="10"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="textEmailAddress"
+       />
+    </android.support.design.widget.TextInputLayout>
+    <Spinner
+        android:id="@+id/club_name"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_below="@id/inp_coor_email"
+        android:scrollbarSize="20sp"
+
+        android:visibility="visible" />
+
+    <!--<Button-->
+        <!---->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="146dp"-->
+        <!--android:background="@drawable/roundcorner"-->
+        <!--android:text="Create"-->
+        <!--android:textColor="#fff" />-->
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/Create_coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/club_name"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_color"
+        android:text="Add Coordinator"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        />
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--style="@style/BoldMonoSerif"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/coor_email"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginStart="15dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:text="Email"-->
+        <!--android:textSize="20dp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView3"-->
+        <!--style="@style/BoldMonoSerif"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginBottom="247dp"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:text="Club Name"-->
+        <!--android:textSize="20dp" />-->
+</RelativeLayout>
